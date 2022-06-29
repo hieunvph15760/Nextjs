@@ -1,0 +1,12 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.main{
+    @apply bg-red-500;
+    @apply flex;
+    @apply py-5;
+    &__textLi{
+        @apply text-white
+    }
+}

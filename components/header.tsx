@@ -6,10 +6,9 @@ type Props = {}
 const Header = (props: Props) => {
   return (
     <div>
-        <ul>
-            <li><Link href="/">Home Page</Link></li>
-            <li><Link href="/products">Product</Link></li>
-            <li><Link href="/products/1">ProductDetails</Link></li>
+        <ul className='main'>
+            <li><Link href="/"><a className='px-3 main__textLi'>Home Pageee</a></Link></li>
+            <li><Link href="/products"><a className='px-3 main__textLi'>Product</a></Link></li>
         </ul>
     </div>
   )
