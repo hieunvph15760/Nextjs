@@ -1,11 +1,13 @@
 import React from 'react'
-
+import LayoutEmpty from "../components/Layout/empty"
 type Props = {}
 
-const Page404 = (props: Props) => {
+const NotFound = (props: Props) => {
   return (
-    <div>404</div>
+    <div>NotFound</div>
   )
 }
 
-export default Page404
+NotFound.Layout = LayoutEmpty
+
+export default NotFound

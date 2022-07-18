@@ -1,6 +1,7 @@
 import { GetStaticProps, GetStaticPropsContext } from "next";
 import React from "react";
 import Link from "next/link"
+import useSWR from "swr";
 
 type ProductsProps= {
     products: any[]
@@ -32,7 +33,6 @@ export const getStaticProps: GetStaticProps<ProductsProps> = async (context:GetS
         }
     }
 }
-
 
 
 export default Products;
