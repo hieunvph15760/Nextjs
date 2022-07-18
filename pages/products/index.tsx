@@ -19,7 +19,7 @@ const Products = ({products}:ProductsProps) =>{
 }
 
 export const getStaticProps: GetStaticProps<ProductsProps> = async (context:GetStaticPropsContext) =>{
-    const data = await (await fetch("http://localhost:3001/products")).json();
+    const data = await (await fetch("https://62d4ee22cd960e45d45dc40a.mockapi.io/products")).json();
     
     if(!data){
         return {
